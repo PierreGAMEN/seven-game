@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <script defer src="/js/calculator.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/stylecalculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="content-calculatrice">
+        <div id="calculatrice">
+            <div class="containerLed">
+                <div class="led led-red"></div>
+                <div class="led led-green"></div>
+            </div>
+            <div id="ecran">
+                <p id="valeur">0</p>
+            </div>
+
+            <div class="BoutonCalculette">
+                
+                <div class="Ligne">
+                    <button class="digitButton">1</button>
+                    <button class="digitButton">2</button>
+                    <button class="digitButton">3</button>
+                </div>
+
+                <div class="Ligne">
+                    <button class="digitButton">4</button>
+                    <button class="digitButton">5</button>
+                    <button class="digitButton">6</button>
+
+                </div>
+                
+                <div class="Ligne">
+                    <button class="digitButton">7</button>
+                    <button class="digitButton">8</button>
+                    <button class="digitButton">9</button>
+                </div>
+                
+                <div class="Ligne">
+                    <button id="multiplyButton">Enter</button>
+                    <button id="zeroButton" class="digitButton">0</button>
+                    <button id="clearButton">C</button>
+                </div>
+            </div>
+        </div>
+        <div class="bip">*BIP*</div>
+    </div>
+</body>
+
+</html>

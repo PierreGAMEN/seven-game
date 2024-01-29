@@ -1,0 +1,111 @@
+body{
+    background-image: url('/pictures/bg-wood.jpg');
+
+}
+
+
+#content-calculatrice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    padding: 10px;
+}
+
+#calculatrice {
+    
+    margin-top: 50px;
+    border-radius: 10px;
+    flex-basis: 400px;
+    height: 600px;
+    background-color: rgb(80, 80, 80);
+    box-shadow: 8px 8px rgb(95, 95, 95);
+    
+    
+    
+}
+
+.Ligne, .Ligne1 {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    gap: 30px;
+    
+}
+
+button {
+    border-radius: 10px;
+    font-size: 25px;
+    width: 70px;
+    height: 70px;
+    border: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: grey;
+}
+
+#ecran {
+    border: 1px solid rgb(255, 255, 255) ;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 30px;
+    width: 80%;
+    
+
+}
+
+p{
+    margin: 20px
+}
+
+.Ligne1 > button {
+    border: 1px solid black ;
+}
+
+
+
+button:active {
+    box-shadow: inset 1px 1px 3px 1px ;
+}
+
+.led {
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+    border: 1px solid #000;
+}
+
+.containerLed {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#content-calculatrice{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: white;
+}
+
+.buttonOut{
+    font-size: 1.5rem;
+}
+
+.buttonOut:hover{
+    color: white;
+    text-decoration: underline white; 
+    cursor: pointer;
+}
+
+.bip {
+    position: absolute;
+    top: 20vh;
+    right: 40vh;
+    font-size: 2rem;
+    display: none;
+}

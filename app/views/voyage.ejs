@@ -1,0 +1,32 @@
+<%- include('./partials/header') %>
+
+<div class="containerSiteVoyage">
+
+<div class="parallax" style="background-image: url('/pictures/<%= voyage.image %>');"></div>
+
+<header class="voyage-header">
+    <h1><%= voyage.destination.toUpperCase() %></h1>
+        <a class= "link-wishList-header" href="#">Accéder à la liste de souhait de Margaux</a><br>
+        <a class= "link-wishList-header" href="/voyages">Retour à la liste des voyages</a>
+    </header>
+
+<div class="section2">
+
+    <div class="containerVoyage">
+        <img class="voyageImg" src="/pictures/<%= voyage.image %>" alt="">
+        <p class="desc-voyage"><%= voyage.long_description %></p>
+        <p>Durée du séjour : <%= voyage.short_description %></p>
+        <p>Prix : <%=voyage.Price %>€/ tête</p>
+        <!-- <p>Activités</p> -->
+        <!-- <a href="#"><img class="miniature" src="/pictures/visite.jpg" alt=""></a>
+        <a href="#"><img class="miniature" src="/pictures/escalade.jpg" alt=""></a>
+        <a href="#"><img class="miniature" src="/pictures/parapente.jpg" alt=""></a> -->
+        <div class="buttonWishList">
+        <p class="text-buttonWishList">Ajouter à ma wishList</p>
+        <button class="button-buttonWishList" href="#">+</button>
+        </div>
+    </div>
+
+</div>
+
+<%- include('./partials/footer') %>

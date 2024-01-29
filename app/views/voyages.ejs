@@ -1,0 +1,32 @@
+<%- include('./partials/header') %>
+
+
+<div class="containerSiteVoyage">
+
+    <div class="parallax" style="background-image : url('/pictures/background.jpg')"></div>
+
+    <header class="voyage-header">
+        
+    <h1>Les voyages</h1>
+        <a class= "link-wishList-header" href="#">Accéder à la liste de souhait de Margaux</a>
+        <div class="container-text-voyage">
+            <p class="text-voyage">Je te propose qu'on s'organise un voyage de grande ampleur. Un voyage dont on se souviendra.</p>
+            <p class="text-voyage">On peut partir, 1 semaine, 1 mois, 1 an. A nous de choisir mais j'ai envie de vivre et construire ce moment avec toi.</p>
+            <p class="text-voyage">Qu'en penses-tu ?</p>
+    </header>
+    <div class="containerVoyageList">
+
+    <% for (const voyage of voyages) { %>
+    
+
+        <article>
+            <a class= "link-wishList-header" href="/voyages/<%= voyage.id %>">
+                <img class="article-miniature" src="/pictures/<%= voyage.image %>" alt="">
+                <h2 class="title-voyageList"><%= voyage.destination.toUpperCase() %></h2>
+            </a>
+        </article>
+
+        <% } %>
+</div>
+
+    <%- include('./partials/footer') %>
