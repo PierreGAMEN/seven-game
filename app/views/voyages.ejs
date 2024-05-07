@@ -8,7 +8,7 @@
     <header class="voyage-header">
         
     <h1>Les voyages</h1>
-        <a class= "link-wishList-header" href="#">Accéder à la liste de souhait de Margaux</a>
+        <a class= "link-wishList-header" href="/wishlist">Accéder à la liste de souhait de Margaux</a>
         <div class="container-text-voyage">
             <p class="text-voyage">Je te propose qu'on s'organise un voyage de grande ampleur. Un voyage dont on se souviendra.</p>
             <p class="text-voyage">On peut partir, 1 semaine, 1 mois, 1 an. A nous de choisir mais j'ai envie de vivre et construire ce moment avec toi.</p>
@@ -20,7 +20,7 @@
     
 
         <article>
-            <a class= "link-wishList-header" href="/voyages/<%= voyage.id %>">
+            <a class= "link-wishList" href="/voyages/<%= voyage.id %>">
                 <img class="article-miniature" src="/pictures/<%= voyage.image %>" alt="">
                 <h2 class="title-voyageList"><%= voyage.destination.toUpperCase() %></h2>
             </a>

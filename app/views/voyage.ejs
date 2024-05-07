@@ -6,7 +6,7 @@
 
 <header class="voyage-header">
     <h1><%= voyage.destination.toUpperCase() %></h1>
-        <a class= "link-wishList-header" href="#">Accéder à la liste de souhait de Margaux</a><br>
+        <a class= "link-wishList-header" href="/wishlist/<%= voyage.id %>">Accéder à la liste de souhait de Margaux</a><br>
         <a class= "link-wishList-header" href="/voyages">Retour à la liste des voyages</a>
     </header>
 
@@ -23,7 +23,7 @@
         <a href="#"><img class="miniature" src="/pictures/parapente.jpg" alt=""></a> -->
         <div class="buttonWishList">
         <p class="text-buttonWishList">Ajouter à ma wishList</p>
-        <button class="button-buttonWishList" href="#">+</button>
+        <a href="/wishlist/<%= voyage.id %>"><button class="button-buttonWishList">+</button></a>
         </div>
     </div>
 

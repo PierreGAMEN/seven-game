@@ -8,6 +8,7 @@ const epreuve3Controller = require('./controllers/epreuve3Controller');
 const epreuve4Controller = require('./controllers/epreuve4Controller');
 const digicodeController = require('./controllers/digicodeController');
 const finalController = require('./controllers/finalController');
+const wishlistController = require('./controllers/wishlistController.js'); 
 
 router.get('/', homeController.index)
 router.get('/epreuve1', hideButtonController.index)
@@ -18,5 +19,8 @@ router.get('/digicode', digicodeController.index)
 router.get('/final', finalController.index)
 router.get('/voyages', voyageController.index)
 router.get('/voyages/:id', voyageController.showOne)
+router.get('/wishlist', wishlistController.index)
+router.get('/wishlist/:id', wishlistController.create)
+router.get('/wishlist/delete/:id', wishlistController.delete)
 
 module.exports = router;

@@ -225,10 +225,19 @@ h1 {
 }
 
 .link-wishList-header{
-    text-decoration: none;
+    text-decoration: underline white;
     color: white;
 }
 
+.link-wishList-header:hover{
+    text-decoration: underline black;
+    color: black;
+}
+
+.link-wishList{
+    text-decoration: none;
+    color: white;
+}
 .indice1 {
     font-size: 1rem;
     margin-top: 4rem;

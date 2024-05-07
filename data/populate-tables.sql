@@ -16,7 +16,7 @@ INSERT INTO activity (id, name, description, image) VALUES
 
 INSERT INTO travel (id, image, destination, short_description, long_description, Price) VALUES
 (1, 'grece.jpg', 'Grèce', '2 à 3 semaines', 'Découvrez la tranquillité de la vie en montagne entourée de vues à couper le souffle.', '1200.00'),
-(2, 'islande.jpg', 'Islande', '2 semaine à 1 mois', 'L''Islande, joyau nordique, fascine avec ses paysages époustouflants : volcans actifs, cascades majestueuses, aurores boréales envoûtantes. Reykjavik, la vibrante capitale, offre une fusion unique entre tradition et modernité. Explorez des glaciers, plongez dans des sources chaudes et vivez une aventure nature exceptionnelle. Une terre de mystères et de merveilles, l''Islande invite à une découverte immersive et inoubliable.', '3000.00'),
+(2, 'islande.jpg', 'Islande', '2 semaine à 1 mois', 'L''Islande, joyau nordique, fascine avec ses paysages époustouflants : volcans actifs, sources chaudes, cascades majestueuses, aurores boréales envoûtantes.', '3000.00'),
 (3, 'clubMed.jpg', 'Club Med', '1 à 2 semaines', 'Laissez-vous séduire par la beauté et la détente d''une escapade tropicale.', '900.00'),
 (4, 'norvege.jpg', 'Norvège', '2 à 3 semaines', 'Découvrez des fjords majestueux, des aurores boréales enchanteresses et une culture riche. La Norvège vous offre une expérience unique entre nature préservée et patrimoine historique.', '1500.00'),
 (5, 'maroc.jpg', 'Maroc', '3 à 4 semaines', 'Plongez dans les saveurs exquises de la cuisine marocaine, perdez-vous dans les ruelles colorées des médinas, et découvrez la diversité captivante du Maroc entre montagnes, déserts et côtes pittoresques.', '1200.00'),

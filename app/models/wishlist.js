@@ -1,20 +1,20 @@
 const { Model, DataTypes } = require('sequelize');
 const getConnexion = require('../database/client');
 
-class whishList extends Model {}
+class Wishlist extends Model {}
 
-whishList.init(
+Wishlist.init(
     {
         travel_id: {
-            type: DataTypes.TEXT,
+            type: DataTypes.INTEGER,
             allowNull: false,
         },
     },
     {
         sequelize: getConnexion(),
         tableName: 'wishlist',
-        modelName: 'whishList',
+        modelName: 'Wishlist',
     }
 );
 
-module.exports = whishList;
+module.exports = Wishlist;

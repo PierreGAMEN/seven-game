@@ -35,6 +35,15 @@ CREATE TABLE IF NOT EXISTS activity (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+DROP TABLE IF EXISTS wishlist CASCADE;
+CREATE TABLE IF NOT EXISTS wishlist (
+    id SERIAL PRIMARY KEY,
+    travel_id INT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (travel_id) REFERENCES travel(id)
+);
+
 
 -- TABLE 4: travel_has_activity
 DROP TABLE IF EXISTS travel_has_activity CASCADE;

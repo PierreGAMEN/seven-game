@@ -26,3 +26,5 @@ const voyageController = {
 }
 
 module.exports = voyageController ;
+
+

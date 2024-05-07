@@ -1,0 +1,30 @@
+<%- include('./partials/header') %>
+
+<link rel="stylesheet" href="/css/style-wishlist.css">
+
+<main class= "body-wishlist" >
+    <div class="container-wishlist">
+        <h1 class="titre-wishlist">Liste de souhait</h1>
+        <a class= "link-voyages" href="/voyages">Revenir aux voyages</a>
+            <ul class="box-wishlist">
+
+             <% for (const wish of wishes) { %>
+                 <li class="card-wishlist">
+                     <img class="img-wishlist" src="/pictures/<%= wish.travels.image %>" alt="" srcset="">
+                     <h2 class="title-wishlist"><%= wish.travels.destination %></h2>
+                     <p class="description-wishlist"><%= wish.travels.long_description %></p>
+                     <div class="container-delete-wishlist">
+                         <img class="delete-card-wishlist" src="pictures/delete.png">
+                         <a href="wishlist/delete/<%= wish.travels.id %>"><p class="text-delete-card-wishlist">Retirer</p></a>
+                     </div>
+                 </li>
+             <% } %>
+          
+                
+        </ul>
+    </div>
+
+
+</main>
+
+<%- include('./partials/footer') %>
