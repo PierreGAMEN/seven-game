@@ -1,8 +1,3 @@
-
-Voici un exemple de README.md pour votre projet "Seven-Game" :
-
-markdown
-Copy code
 # Seven-Game
 
 ## Overview
